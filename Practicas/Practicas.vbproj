@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4BC21E61-5AE9-4AAD-858E-36ECC6F568FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Practicas.My.MyApplication</StartupObject>
+    <RootNamespace>Practicas</RootNamespace>
+    <AssemblyName>Practicas</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Practicas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Practicas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clientes.designer.vb">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras.Designer.vb">
+      <DependentUpon>Compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistorialCompras.Designer.vb">
+      <DependentUpon>HistorialCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistorialMovimientosExtras.Designer.vb">
+      <DependentUpon>HistorialMovimientosExtras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialMovimientosExtras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistorialVentas.Designer.vb">
+      <DependentUpon>HistorialVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movExtra.Designer.vb">
+      <DependentUpon>movExtra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="movExtra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoProveedor.Designer.vb">
+      <DependentUpon>NuevoProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoProducto.Designer.vb">
+      <DependentUpon>NuevoProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos.Designer.vb">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores.Designer.vb">
+      <DependentUpon>Proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Nuevo.Designer.vb">
+      <DependentUpon>Nuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Nuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vender.Designer.vb">
+      <DependentUpon>Vender.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vender.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras.resx">
+      <DependentUpon>Compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistorialCompras.resx">
+      <DependentUpon>HistorialCompras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistorialMovimientosExtras.resx">
+      <DependentUpon>HistorialMovimientosExtras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistorialVentas.resx">
+      <DependentUpon>HistorialVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movExtra.resx">
+      <DependentUpon>movExtra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoProveedor.resx">
+      <DependentUpon>NuevoProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoProducto.resx">
+      <DependentUpon>NuevoProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos.resx">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores.resx">
+      <DependentUpon>Proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nuevo.resx">
+      <DependentUpon>Nuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vender.resx">
+      <DependentUpon>Vender.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoIVH.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoFacu2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-claro-01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoFacu21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoIVH1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-fiesta-01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-fiesta-02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-playa-ocaso.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_0521-wide.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_0521-wide-01.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
