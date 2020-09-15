@@ -1,5 +1,5 @@
 # IVH -vb
- Sistema de gestion 
+ Sistema de gestion - Managment System 
 
 
 Explicación en castellano
